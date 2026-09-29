@@ -14,5 +14,32 @@ namespace OrcamentoDev.Views
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "Admin" && txtSenha.Text == "1234")
+            {
+                FrmMenu menu = new FrmMenu();
+                menu.ShowDialog();
+                this.Hide();
+            }
+
+            else
+            {
+                MessageBox.Show("Usuario/Senha invalida", "erro", MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+
+            }
+        }
     }
 }

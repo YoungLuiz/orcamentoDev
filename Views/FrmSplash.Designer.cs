@@ -38,11 +38,13 @@
             // lblTituloSplash
             // 
             lblTituloSplash.AutoSize = true;
-            lblTituloSplash.Location = new Point(349, 49);
+            lblTituloSplash.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTituloSplash.Location = new Point(264, 53);
             lblTituloSplash.Name = "lblTituloSplash";
-            lblTituloSplash.Size = new Size(131, 15);
+            lblTituloSplash.Size = new Size(304, 31);
             lblTituloSplash.TabIndex = 0;
-            lblTituloSplash.Text = "Sistema de oracamento";
+            lblTituloSplash.Text = "Sistema de orcamento";
+            lblTituloSplash.Click += lblTituloSplash_Click;
             // 
             // prgCarregando
             // 
@@ -58,9 +60,10 @@
             // lblCarregando
             // 
             lblCarregando.AutoSize = true;
-            lblCarregando.Location = new Point(349, 101);
+            lblCarregando.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblCarregando.Location = new Point(303, 98);
             lblCarregando.Name = "lblCarregando";
-            lblCarregando.Size = new Size(128, 15);
+            lblCarregando.Size = new Size(231, 30);
             lblCarregando.TabIndex = 2;
             lblCarregando.Text = "Carregando módulos...";
             // 
@@ -68,11 +71,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(0, 192, 192);
             ClientSize = new Size(841, 221);
             Controls.Add(lblCarregando);
             Controls.Add(prgCarregando);
             Controls.Add(lblTituloSplash);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FrmSplash";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmSplash";
             ResumeLayout(false);
             PerformLayout();

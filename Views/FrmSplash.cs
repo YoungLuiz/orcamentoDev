@@ -39,5 +39,10 @@ namespace OrcamentoDev.Views
                 this.Hide();
             }
         }
+
+        private void lblTituloSplash_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
